@@ -8,7 +8,6 @@
  */
 function hasKeys(object, keys) {
   if (!(object instanceof Array) && object instanceof Object) {
-
     const keyArray = Array.isArray(keys) ? keys : [keys];
 
     if (!keyArray.length) return true;
