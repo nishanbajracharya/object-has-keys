@@ -1,6 +1,6 @@
 {
   "name": "object-has-keys",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A javascript utility to check if given object has a set of keys.",
   "main": "lib.js",
   "scripts": {
