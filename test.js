@@ -116,4 +116,12 @@ describe('Various use cases', () => {
 
     expect(result).to.equal(true);
   });
+
+  it ('should return false when called key is object', () => {
+    const object = { key1: 'value', key2: 'value' };
+
+    const result = hasKeys(object, {key: 'value'});
+
+    expect(result).to.equal(false);
+  });
 });

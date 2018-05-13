@@ -1,3 +1,11 @@
+/**
+ * Takes an object and checks if given key exists in the object.
+ *
+ * @param {Object} object
+ * @param {String|Array} keys
+ *
+ * @returns Boolean
+ */
 function hasKeys(object, keys) {
   if (!(object instanceof Array) && object instanceof Object) {
 
