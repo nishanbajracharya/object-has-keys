@@ -11,10 +11,10 @@ $ npm install --save object-has-keys
 ## Usage
 Import the package into your package using `require` or `import` statements
 ```js
-const hasKeys = require('object-has-keys'); // CommonJS
+const { hasKeys } = require('object-has-keys'); // CommonJS
 ```
 ```js
-import hasKeys from 'object-has-keys'; // ES2015+
+import { hasKeys } from 'object-has-keys'; // ES2015+
 ```
 
 The `hasKeys` function takes two arguments, the `object` and the `keys`. It can be use as follows:
