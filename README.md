@@ -43,11 +43,11 @@ const myObject = {
   key3: 'value'
 };
 
-hasKeys(myObject, 'key1'); // true
-hasKeys(myObject, ['key1', 'key5']); // true
+hasAnyKey(myObject, 'key1'); // true
+hasAnyKey(myObject, ['key1', 'key5']); // true
 
-hasKeys(myObject, 'key5'); // false
-hasKeys(myObject, ['key6']); // false
+hasAnyKey(myObject, 'key5'); // false
+hasAnyKey(myObject, ['key6']); // false
 ```
 
 ## Contributing
