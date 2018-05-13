@@ -1,8 +1,8 @@
 const expect = require('chai').expect;
 
-const hasKeys = require('./index');
+const { hasKeys, hasAnyKey } = require('./lib');
 
-describe('Simple Positive Test', () => {
+describe('ALL KEYS: Simple Positive Test', () => {
   it ('should return true for single string key', () => {
     const object = { key: 'value' };
 
@@ -28,7 +28,7 @@ describe('Simple Positive Test', () => {
   });
 });
 
-describe('Simple Negative Test', () => {
+describe('ALL KEYS: Simple Negative Test', () => {
   it ('should return false for single string key', () => {
     const object = { key: 'value' };
 
@@ -54,7 +54,7 @@ describe('Simple Negative Test', () => {
   });
 });
 
-describe('Various use cases', () => {
+describe('ALL KEYS: Various use cases', () => {
   it ('should throw error when input is not object', () => {
     const object = 'Hello';
 
@@ -139,5 +139,23 @@ describe('Various use cases', () => {
     const result = hasKeys(object, 'key3');
 
     expect(result).to.equal(true);
+  });
+});
+
+describe('ANY KEY: Simple Test', () => {
+  it ('should return true if any key exists', () => {
+    const object = { key1: 'value', key2: 'value' };
+
+    const result = hasAnyKey(object, ['key3', 'key1']);
+
+    expect(result).to.equal(true);
+  });
+
+  it ('should return false if no keys exist', () => {
+    const object = { key1: 'value', key2: 'value' };
+
+    const result = hasAnyKey(object, ['key3', 'key4']);
+
+    expect(result).to.equal(false);
   });
 });
