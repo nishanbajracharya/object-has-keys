@@ -124,4 +124,20 @@ describe('Various use cases', () => {
 
     expect(result).to.equal(false);
   });
+
+  it ('should return true when object has function', () => {
+    const object = { key1: 'value', key2: 'value', key3: f => f };
+
+    const result = hasKeys(object, 'key1');
+
+    expect(result).to.equal(true);
+  });
+
+  it ('should return true when object has function and same key is called', () => {
+    const object = { key1: 'value', key2: 'value', key3: f => f };
+
+    const result = hasKeys(object, 'key3');
+
+    expect(result).to.equal(true);
+  });
 });
