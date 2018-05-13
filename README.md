@@ -2,7 +2,7 @@
 A javascript utility to check if given object has a set of keys.
 
 ## Getting started
-The first step is to add `redux-loader` into your project.
+The first step is to add `object-has-keys` into your project.
 
 ```sh
 $ npm install --save object-has-keys
