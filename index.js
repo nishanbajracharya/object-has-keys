@@ -10,10 +10,9 @@ function hasKeys(object, keys) {
     }
 
     return true;
-
   }
 
-  throw new Error('Expected object for' + object);
+  throw new Error('Expected object for input: ' + JSON.stringify(object));
 }
 
 module.exports = hasKeys;
