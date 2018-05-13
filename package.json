@@ -1,0 +1,23 @@
+{
+  "name": "object-has-keys",
+  "version": "0.1.0",
+  "description": "A javascript utility to check if given object has a set of keys.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishanbajracharya/object-has-keys.git"
+  },
+  "keywords": [
+    "object",
+    "keys"
+  ],
+  "author": "Nishan Bajracharya <nisbaj11@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nishanbajracharya/object-has-keys/issues"
+  },
+  "homepage": "https://github.com/nishanbajracharya/object-has-keys#readme"
+}
