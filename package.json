@@ -3,7 +3,7 @@
   "version": "0.2.2",
   "description": "Utility to check if given object has a set of keys.",
   "main": "lib.js",
-  "files" : [
+  "files": [
     "lib.js"
   ],
   "scripts": {
