@@ -1,8 +1,11 @@
 {
   "name": "object-has-keys",
   "version": "0.2.2",
-  "description": "A javascript utility to check if given object has a set of keys.",
+  "description": "Utility to check if given object has a set of keys.",
   "main": "lib.js",
+  "files" : [
+    "lib.js"
+  ],
   "scripts": {
     "test": "mocha",
     "build": "babel index.js -o lib.js"
